@@ -1,0 +1,85 @@
+.footer {
+  color: #fdfcfe;
+  background-color: #232221;
+
+  padding: 8rem;
+
+  &-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 12rem;
+    align-items: center;
+    padding: 4rem 8rem;
+
+
+  }
+
+
+  &-logo {
+    // grid-column: 1/-1;
+    // grid-row: 2/3;
+
+    &-img {
+      height: 5rem;
+      width: 10rem;
+    }
+
+    &-desc {
+      font-size: 1.2rem;
+    }
+  }
+
+  &-products {
+
+    & h3 {
+      margin-bottom: 1.5rem;
+      position: relative;
+
+      &::after {
+        height: 2px;
+        width: 50%;
+        background-color: #321c22;
+        position: absolute;
+        top: 0;
+        left: 50%;
+      }
+    }
+
+    &-list {
+      list-style: none;
+      font-size: 1.5rem;
+
+      & a {
+        text-decoration: none;
+        color: #fdfcfe;
+
+        &:hover {
+          // font-size: 1.52rem;
+          color: #e5dcee;
+        }
+      }
+    }
+
+
+  }
+}
+
+.location {
+  font-size: 1.3rem;
+
+  &-icon {
+    font-size: 4rem;
+  }
+
+  display: flex;
+  gap: 1rem;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // align-items: center;
+
+}
+
+.copy {
+  text-align: center;
+  font-size: 1.3rem;
+}

@@ -1,0 +1,72 @@
+.footer {
+  color: #fdfcfe;
+  background-color: #232221;
+  padding: 8rem;
+}
+
+.footer-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 12rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 8rem;
+}
+
+.footer-logo-img {
+  height: 5rem;
+  width: 10rem;
+}
+
+.footer-logo-desc {
+  font-size: 1.2rem;
+}
+
+.footer-products h3 {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.footer-products h3::after {
+  height: 2px;
+  width: 50%;
+  background-color: #321c22;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.footer-products-list {
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.footer-products-list a {
+  text-decoration: none;
+  color: #fdfcfe;
+}
+
+.footer-products-list a:hover {
+  color: #e5dcee;
+}
+
+.location {
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.location-icon {
+  font-size: 4rem;
+}
+
+.copy {
+  text-align: center;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=footer.css.map */

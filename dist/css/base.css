@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "open-sans", sans-serif;
+  color: #6D5D4B;
+  background-color: #aaa;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  margin: auto 0;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+}
+
+.heading-3 {
+  font-size: 2rem;
+}
+
+.heading-4 {
+  font-size: 1.5rem;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+/*# sourceMappingURL=base.css.map */

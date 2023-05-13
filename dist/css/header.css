@@ -1,0 +1,79 @@
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.5rem 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.navigation-logo {
+  width: 15rem;
+  height: 5rem;
+}
+
+.navigation-links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation-links a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navigation-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+}
+
+.bi {
+  height: 2rem;
+  width: 2rem;
+}
+
+.bi-bi-cart4 {
+  position: relative;
+}
+
+.cart-count {
+  color: whitesmoke;
+  position: absolute;
+  right: 1%;
+  top: 31%;
+  font-size: xx-small;
+  background-color: skyblue;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=header.css.map */
