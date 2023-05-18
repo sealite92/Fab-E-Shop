@@ -91,7 +91,8 @@ const signUpBtn = document.querySelector('.btn-sign-up');
 const signUpForm = document.querySelector('.accounts-sign-up');
 const search = document.querySelector('.search');
 const cartContainer = document.querySelector('.cart-contents');
-
+const nav = document.querySelector('.navigation');
+const section = document.querySelector('.products')
 // btnAddCart.addEventListener('click', e => {
 
 
@@ -237,6 +238,8 @@ generateShop = function(e) {
 };
 
 generateShop();
+
+
 itemId = document.getElementById(currentItemId);
 
 const openModal = function (e) {
@@ -318,7 +321,7 @@ document.addEventListener('keydown', function (e) {
 
 
 
-
+///// adding items to cart
 
  addToCart = function(itemId) {
 const currentItem = itemId;
@@ -336,8 +339,8 @@ const html = `
 `
 cartContainer.innerHTML = html;
 
-console.log(cartContainer);
-console.log(item.id, currentItem);
+// console.log(cartContainer);
+// console.log(item.id, currentItem);
   }
 })
 const cartCount = cartItems.length;
@@ -345,9 +348,33 @@ cartCountEl.textContent = cartCount;
 }
 
 
+//// Building the fading effect on the navigation
 
+const hoverHandler = function(e, opacity) {
+  if (e.target.classList.contains('navigation-link')) {
+    const link = e.target
+    const sibling = link.closest('.navigation').querySelectorAll('.naviagtion-link')
+    const logo = link.closest('.navigation').querySelector('img')
 
+    sibling.forEach(el => {
+      if (el !== link) el.style.opacity = this;
+    })
+    logo.style.opacity = this;
+  }
+  
+}
 
+nav.addEventListener('mouseover', hoverHandler.bind(0.5))
+nav.addEventListener('mouseout', hoverHandler.bind(1))
+
+////sticky navigation
+const initialCoords = section.getBoundingClientRect()
+console.log(initialCoords);
+
+window.addEventListener('scroll', function() {
+if (this.window.scrollY > initialCoords.top) nav.classList.add('sticky')
+else nav.classList.remove('sticky')
+})
 
 
 
