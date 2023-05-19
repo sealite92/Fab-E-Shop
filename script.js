@@ -368,6 +368,7 @@ nav.addEventListener('mouseover', hoverHandler.bind(0.5))
 nav.addEventListener('mouseout', hoverHandler.bind(1))
 
 ////sticky navigation
+
 const initialCoords = section.getBoundingClientRect()
 console.log(initialCoords);
 
@@ -377,7 +378,21 @@ else nav.classList.remove('sticky')
 })
 
 
+// const navHeight = nav.getClientRects().height;
+// const stickyNav = function(entries) {
+//   const [entry] = entries;
 
+//   if (!entry.isIntersecting) {nav.classList.add('sticky')
+// } else nav.classList.remove('sticky')
+// }
+
+// const headerObserver = new IntersectionObserver(stickyNav, {
+//   root: null,
+//   threshold: 0,
+//   // rootMargin: `-${navHeight}px`
+// })
+
+// headerObserver.observe(nav)
 
 
 
