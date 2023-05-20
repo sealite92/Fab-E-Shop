@@ -124,7 +124,8 @@ body {
   position: fixed;
   opacity: 10;
   width: 100vw;
-  height: inherit; }
+  height: inherit;
+  z-index: 1000; }
 
 .navigation {
   display: flex;
