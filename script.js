@@ -336,7 +336,7 @@ const html = `
 <span class="price-dolar"> $${item.price}</span>
 <span className="remove-cart">x</span>
 </li>
-`.join('')
+`
 cartContainer.innerHTML = html;
 
 // console.log(cartContainer);
